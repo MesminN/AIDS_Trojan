@@ -1,0 +1,6 @@
+D:/workspace/dev/AIDS_Trojan/build-AIDS_Trojan-MVSC-Release/CMakeFiles/AIDS_Trojan.dir
+D:/workspace/dev/AIDS_Trojan/build-AIDS_Trojan-MVSC-Release/CMakeFiles/edit_cache.dir
+D:/workspace/dev/AIDS_Trojan/build-AIDS_Trojan-MVSC-Release/CMakeFiles/rebuild_cache.dir
+D:/workspace/dev/AIDS_Trojan/build-AIDS_Trojan-MVSC-Release/CMakeFiles/list_install_components.dir
+D:/workspace/dev/AIDS_Trojan/build-AIDS_Trojan-MVSC-Release/CMakeFiles/install.dir
+D:/workspace/dev/AIDS_Trojan/build-AIDS_Trojan-MVSC-Release/CMakeFiles/install/local.dir

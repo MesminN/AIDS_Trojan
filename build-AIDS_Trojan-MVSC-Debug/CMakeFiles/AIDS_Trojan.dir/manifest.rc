@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/workspace/dev/AIDS_Trojan/build-AIDS_Trojan-MVSC-Debug/CMakeFiles/AIDS_Trojan.dir/embed.manifest"

@@ -1,0 +1,23 @@
+Detecting compiler hash for triplet x64-windows...
+Detecting compiler hash for triplet x64-windows-static...
+The following packages will be built and installed:
+    openssl[core]:x64-windows-static -> 3.0.7#2
+  * vcpkg-cmake[core]:x64-windows -> 2022-12-22
+  * vcpkg-cmake-config[core]:x64-windows -> 2022-02-06#1
+  * vcpkg-cmake-get-vars[core]:x64-windows -> 2022-12-16
+Additional packages (*) will be modified to complete this operation.
+Restored 4 package(s) from C:\Users\33768\AppData\Local\vcpkg\archives in 1.644 s. Use --debug to see more details.
+Installing 1/4 vcpkg-cmake:x64-windows...
+Elapsed time to handle vcpkg-cmake:x64-windows: 21.63 ms
+Installing 2/4 vcpkg-cmake-get-vars:x64-windows...
+Elapsed time to handle vcpkg-cmake-get-vars:x64-windows: 13.93 ms
+Installing 3/4 vcpkg-cmake-config:x64-windows...
+Elapsed time to handle vcpkg-cmake-config:x64-windows: 21.96 ms
+Installing 4/4 openssl:x64-windows-static...
+Elapsed time to handle openssl:x64-windows-static: 410.5 ms
+Total install time: 2.112 s
+The package openssl is compatible with built-in CMake targets:
+
+    find_package(OpenSSL REQUIRED)
+    target_link_libraries(main PRIVATE OpenSSL::SSL OpenSSL::Crypto)
+

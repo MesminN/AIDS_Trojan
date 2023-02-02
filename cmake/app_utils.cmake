@@ -1,0 +1,10 @@
+function(setup_vcpkg_before_project)
+	if(DEFINED ENV{VCPKG_ROOT_DIR})
+		set (CMAKE_TOOLCHAIN_PATH "$ENV{VCPKG_ROOT_DIR}/scripts/buildsystems/vcpkg.cmake") 
+                set (CMAKE_TOOLCHAIN_FILE "${CMAKE_TOOLCHAIN_PATH}" CACHE STRING "" FORCE)
+        endif()
+
+        if(DEFINED ENV{VCPKG_DEFAULT_TRIPLET} AND NOT VCPKG_TARGET_TRIPLET)
+                set (VCPKG_TARGET_TRIPLET "$ENV{VCPKG_DEFAULT_TRIPLET}" CACHE STRING "")
+	endif()
+endfunction()
