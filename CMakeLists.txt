@@ -21,8 +21,6 @@ include_directories(${OPENSSL_INCLUDE_DIR})
 
 add_executable(AIDS_Trojan
   main.cpp
-  controller/RansomController.cpp 
-  controller/RansomController.h
   service/Folderservice.cpp
   service/Folderservice.h
   service/EncryptorService.h

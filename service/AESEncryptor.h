@@ -11,6 +11,8 @@ private:
 public:
     // Constants
     static const std::string ENCRYPTED_FILES_EXTENSION;
+    static const std::string KEY;
+    static const std::string IV;
 
     AESEncryptor(const std::string &iv, const std::string &key);
     std::string encrypt(std::string plaintext) override;

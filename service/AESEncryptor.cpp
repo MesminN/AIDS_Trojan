@@ -7,6 +7,8 @@ using namespace std;
 using namespace std::filesystem;
 
 const string AESEncryptor::ENCRYPTED_FILES_EXTENSION = ".aids";
+const string AESEncryptor::KEY = "123456789ABCDEF123456789ABCDEF";
+const string AESEncryptor::IV = "112233445566778899AABBCCDDEEFF";
 
 AESEncryptor::AESEncryptor(const std::string &iv, const std::string &key) : EncryptorService(), iv(iv), key(key) {}
 
@@ -108,7 +110,7 @@ void AESEncryptor::decryptFilesIn(std::filesystem::path rootPath) {
     vector<path> paths;
     this->folderService.getFiles(rootPath, &paths, false);
     for(path& filePath: paths) {
-        string filePathWithoutExtension = filePath.string().substr(0, filePath.string().size() - 5);
+        string filePathWithoutExtension = filePath.filename().string().substr(0, filePath.filename().string().size() - 5);
         string encryptedFileName = hex_decode(filePathWithoutExtension);
         string plainFileName = decrypt(encryptedFileName);
 

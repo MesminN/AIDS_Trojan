@@ -11,7 +11,7 @@ protected:
     std::vector<std::string> m_exclude_paths;
 
 public:
-    const std::filesystem::path DEFAULT_ROOT_FOLDER = "\\";
+    const std::filesystem::path DEFAULT_ROOT_FOLDER = "C:\\test";
     FolderService();
     FolderService(std::filesystem::path rootFolder);
     void initializeExcludedFilesAndFolders();
