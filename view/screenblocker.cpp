@@ -32,7 +32,21 @@ HWND hEdit = CreateWindowEx(WS_EX_CLIENTEDGE, "EDIT", "",
                             300, 20, hwnd, (HMENU) 1, GetModuleHandle(NULL), NULL);
 
 // Create a label
-HWND hLabel = CreateWindowEx(0, "STATIC", "AIDS You need to pay to be in peace 250$ by postal",
+HWND hLabel = CreateWindowEx(0, "STATIC",
+                             "Dear Customer:\n"
+                             "It is time to pay for your software lease from PC Cyborg Corporation.\n"
+                             "Complete the INUOICE and attach payment for the lease option of your choice.\n"
+                             "If you don't use the printed INUOICE, then be sure to refer to the important "
+                             "reference numbers below in all correspondence. In return you will receive:\n"
+                             "- a renewal software package with easy-to-follow, complete instructions:\n"
+                             "-  an automatic, self-installing diskette that anyone can apply in minutes.\n"
+                             "Important reference numbers: A5599796-2695527-\n"
+                             "The price of 365 user applications is US$189. The price of a lease for the lifetime "
+                             "of your hard disk is US$378. You must enclose a bankers draft, cashier's check or "
+                             "international money order payable to PC CYBORG CORPORATION for the full amount of $189 "
+                             "or $378 with your order. Include your name, company, address, city, state, country, zip "
+                             "or postal code. Mail your order to PC Cyborg Corporation, P.O. Box 87-17-44, Panama 7, Panama\n\n"
+                             "Please ENTER the code to decipher your file!",
                              WS_CHILD | WS_VISIBLE | SS_CENTER,
                              (GetSystemMetrics(SM_CXSCREEN) - 200) / 2,
                              (GetSystemMetrics(SM_CYSCREEN) - 40) / 2,
