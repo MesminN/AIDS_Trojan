@@ -48,9 +48,9 @@ HWND hLabel = CreateWindowEx(0, "STATIC",
                              "or postal code. Mail your order to PC Cyborg Corporation, P.O. Box 87-17-44, Panama 7, Panama\n\n"
                              "Please ENTER the code to decipher your file!",
                              WS_CHILD | WS_VISIBLE | SS_CENTER,
-                             (GetSystemMetrics(SM_CXSCREEN) - 200) / 2,
-                             (GetSystemMetrics(SM_CYSCREEN) - 40) / 2,
-                             200, 40, hwnd, (HMENU) 2, GetModuleHandle(NULL), NULL);
+                             (GetSystemMetrics(SM_CXSCREEN) - 800) / 2,
+                             (GetSystemMetrics(SM_CYSCREEN) - 200) / 2,
+                             800, 200, hwnd, (HMENU) 2, GetModuleHandle(NULL), NULL);
 
 // Set font of the label
 SendMessage(hLabel, WM_SETFONT, (WPARAM)
